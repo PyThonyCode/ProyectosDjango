@@ -1,0 +1,11 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+<h1>PAGINA PARA CREAR NUEVO PROYECTO</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">SAVE</button>
+</form>
+
+{% endblock %}
